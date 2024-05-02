@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signup" action="#">  <div class="form-group">
+        <label for="signupemail">Email Address:</label>
+        <input type="email" id="signupemail" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="signuppassword">Password:</label>
+        <input type="password" id="signuppassword" name="password" required minlength="8">
+      </div>
+      <div class="form-group">
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirm-password" required minlength="8">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea type="text" id="address" name="address" cols="30" rows="10"></textarea>
+       
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> </div>
+      <button type="submit">Sign Up</button>
+      <label for="">Already Have an Account? </label>
+      <a href="index.html">Sign In</a>
+    </form>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
